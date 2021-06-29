@@ -12,9 +12,12 @@
                     <%= fa_icon 'search 2x' %>
                 <% end %>
             </div>
-            <div id="results">
-            
-            </div>
-         
+        </div>
     <% end %>
+<div id="results">
+        
 </div>
+<% if !@tracked_stocks.empty? %>
+    <%= render 'stocks/list' %>
+<% end %>
+
