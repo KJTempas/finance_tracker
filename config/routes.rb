@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'my_portfolio', to: 'users#my_portfolio'
   get 'search_stock_path', to: 'stocks#search' #send to stocks controller/ search method
+  get 'my_friends', to: 'users#my_friends'
+  get 'search_friend_path', to: 'users#search'
 end
